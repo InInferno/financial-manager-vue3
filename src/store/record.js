@@ -15,11 +15,9 @@ export default {
   actions: {
     async createRecord({dispatch, commit}, record) {
       try {
-        // const uid = await dispatch('getUid');
         const uid = await dispatch('getUid');
         const db = getDatabase();
         const refer = (await ref(db, `/users/${uid}/records`));
-        // return await firebase.database().ref(`/users/${uid}/records`).push(record)
         await push(refer, record);
       } catch (e) {
         commit('setError', e);
@@ -33,7 +31,9 @@ export default {
         const val = await new Promise((resolve) => {
           onValue(ref(db, `/users/${uid}/records`), (snap) => resolve(snap.val()), {onlyOnce: true});
         });
-        return Object.keys(val).map((key) => ({...val[key], id: key}));
+        return val
+          ? Object.keys(val).map((key) => ({...val[key], id: key}))
+          : [];
       } catch (e) {
         commit('setError', e);
         throw e;

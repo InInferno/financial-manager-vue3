@@ -1,3 +1,5 @@
+import filters from './filters';
+
 export default {
   install: (app) => {
     const message = (html) => {
@@ -5,7 +7,7 @@ export default {
     };
 
     const error = (html) => {
-      window.M.toast({html: `[${this.$filters.localizeFilter('Error')}]: ${html}`});
+      window.M.toast({html: `[${filters.localizeFilter('Error')}]: ${html}`});
     };
 
     app.provide('message', message);

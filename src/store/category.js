@@ -22,8 +22,9 @@ export default {
         const val = await new Promise((resolve) => {
           onValue(ref(db, `/users/${uid}/categories`), (snap) => resolve(snap.val()), {onlyOnce: true});
         });
-        // commit('setCategories', Object.keys(val).map((key) => ({...val[key], id: key})));
-        return Object.keys(val).map((key) => ({...val[key], id: key}));
+        return val
+          ? Object.keys(val).map((key) => ({...val[key], id: key}))
+          : [];
       } catch (e) {
         commit('setError', e);
         throw e;
@@ -36,7 +37,6 @@ export default {
         const val = await new Promise((resolve) => {
           onValue(ref(db, `/users/${uid}/categories/${id}`), (snap) => resolve(snap.val()), {onlyOnce: true});
         });
-        // commit('setCategories', Object.keys(val).map((key) => ({...val[key], id: key})));
         return {...val, id};
       } catch (e) {
         commit('setError', e);
@@ -47,7 +47,6 @@ export default {
       try {
         const uid = await dispatch('getUid');
         const db = getDatabase();
-        // await ref(db, `/users/${uid}/categories`).child(id).update(title, limit);
         const dbRef = ref(db, `/users/${uid}/categories/${id}`);
         update(dbRef, {title, limit}).then(() => {
           console.log('Data updated');
