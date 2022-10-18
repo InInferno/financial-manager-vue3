@@ -1,0 +1,60 @@
+[debug] [2022-10-18T21:12:52.724Z] ----------------------------------------------------------------------
+[debug] [2022-10-18T21:12:52.725Z] Command:       C:\Programs\nodejs\node.exe C:\Users\vadim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-18T21:12:52.726Z] CLI Version:   11.15.0
+[debug] [2022-10-18T21:12:52.726Z] Platform:      win32
+[debug] [2022-10-18T21:12:52.726Z] Node Version:  v16.17.0
+[debug] [2022-10-18T21:12:52.727Z] Time:          Wed Oct 19 2022 00:12:52 GMT+0300 (Москва, стандартное время)
+[debug] [2022-10-18T21:12:52.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-18T21:12:52.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-18T21:12:52.732Z] > authorizing via signed-in user (vaadimkaa1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\CodeBoard\vue\vue-manager
+
+[debug] [2022-10-18T21:13:39.629Z] ----------------------------------------------------------------------
+[debug] [2022-10-18T21:13:39.631Z] Command:       C:\Programs\nodejs\node.exe C:\Users\vadim\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-10-18T21:13:39.632Z] CLI Version:   11.15.0
+[debug] [2022-10-18T21:13:39.632Z] Platform:      win32
+[debug] [2022-10-18T21:13:39.632Z] Node Version:  v16.17.0
+[debug] [2022-10-18T21:13:39.633Z] Time:          Wed Oct 19 2022 00:13:39 GMT+0300 (Москва, стандартное время)
+[debug] [2022-10-18T21:13:39.633Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-18T21:13:39.639Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-18T21:13:39.639Z] > authorizing via signed-in user (vaadimkaa1@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\CodeBoard\vue\vue-manager
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-10-18T21:17:17.486Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-10-18T21:17:18.212Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-10-18T21:17:18.212Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project vue-manager-crm (vue-manager-crm) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
