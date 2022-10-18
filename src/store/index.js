@@ -23,19 +23,16 @@ export default createStore({
   },
   actions: {
     async fetchCurrency() {
-      const res = {
-        "success": true,
-        "timestamp": 1665606724,
-        "base": "EUR",
-        "date": "2022-10-12",
-        "rates": {
-          "USD": 0.969885,
-          "EUR": 1,
-          "RUB": 61.805891
-        }
+      const myHeaders = new Headers();
+      myHeaders.append('apikey', process.env.VUE_APP_FIXER);
+      const requestOptions = {
+        method: 'GET',
+        redirect: 'follow',
+        headers: myHeaders
       };
+      const res = await fetch('https://api.apilayer.com/fixer/latest?&symbols=USD,EUR,RUB', requestOptions);
       // eslint-disable-next-line no-return-await
-      return res;
+      return await res.json();
     }
   },
   modules: {
