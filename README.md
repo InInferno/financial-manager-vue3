@@ -2,7 +2,7 @@
 
 - Ссылка на стенд № 1: [Financial Manager Vue3](https://vue-manager-crm.web.app/ "Домашняя бухгалтерия")
 - Ссылка на стенд № 2: [Financial Manager Vue3](https://vue-manager-crm.firebaseapp.com/ "Домашняя бухгалтерия")
-- Ссылка на репозиторий: [GitHub Financial Manager Vue3]([https://ininferno.github.io/financial-manager-vue3/](https://github.com/InInferno/financial-manager-vue3) "financial-manager-vue3")
+- Ссылка на репозиторий: [GitHub Financial Manager Vue3](https://ininferno.github.io/financial-manager-vue3/ "Financial Manager Vue3")
 - Версия: v. 0.0.1
 
 В приложении можно зарегистрироваться или авторизоваться под тестовым аккаунтом:
